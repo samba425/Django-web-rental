@@ -1,0 +1,17 @@
+system
+---------
+1) pipenv isntall if not their in system
+   sudo -H pip install -U pipenv
+
+Project
+--------
+
+2) Install django 
+    pipenv install django==2.1
+	
+3) Create virtual env 
+   pipenv shell 
+   
+4) create django-admin boilerplate Project
+    django-admin startproject vidly(project name) .
+	-> manage.py is used for admin config like starting server,migrating DB
