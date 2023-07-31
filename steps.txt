@@ -12,6 +12,6 @@ Project
 3) Create virtual env 
    pipenv shell 
    
-4) create django-admin boilerplate Project
+4) Create django-admin boilerplate Project
     django-admin startproject vidly(project name) .
 	-> manage.py is used for admin config like starting server,migrating DB
