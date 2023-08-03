@@ -59,3 +59,10 @@ Project
 16) 
    pipenv install whitenoise
    -->  'whitenoise.middleware.WhiteNoiseMiddleware' to middleware array
+
+17)   -> heroku login
+      -> heroku create
+      -> git push heroku master
+      -> heroku ps:scale web=1   //webserver adding can increase for more web servers
+      -> heroku open (opens the apps)
+      -> ALLOWED_HOSTS add ur host to this arrray if app not opens
