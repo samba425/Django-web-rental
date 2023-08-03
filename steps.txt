@@ -15,3 +15,47 @@ Project
 4) Create django-admin boilerplate Project
     django-admin startproject vidly(project name) .
 	-> manage.py is used for admin config like starting server,migrating DB
+    
+5) To run applicatin in virtual env
+    python3 manage.py runserver --- run on default server
+    python3 manage.py runserver 8080   -- if require specific can use port number
+    
+6) For creating new Dir like movies
+   python3 manage.py startapp movies
+
+7) makemigrations it sync with models and update DB with proper model's
+   python3 manage.py makemigrations
+   
+8) before running application run migrate so it runs all pending migrates to the DBS
+   python3 manage.py migrate   
+   
+*** never delete migration files which created      
+   
+9) how migarte is happing can run manully by this command
+   python3 manage.py sqlmigrate movies 0001(migrate file name which u want to migrate)
+    
+10) create super user for admin access/login
+     python3 manage.py createsuperuser
+
+11) for creating API get frame like
+   pipenv install django-tastypie 
+   
+12) created new APP for API's exposing endpoints
+    python3 manage.py startapp  api
+    --> http://127.0.0.1:8000/api/movies gives all movies
+    
+13) for deploying Heroku
+    -> brew tap heroku/brew && brew install heroku (mac install)
+    -> heroku --version 
+    
+ 14) web server for python applciations
+     pipenv install gunicorn
+     -> create Proffile file with same name for web process
+     ->vidly.wsgi mani folder name.wsgi file name
+
+15) create the static files 
+    python3 manage.py collectstatic
+    
+16) 
+   pipenv install whitenoise
+   -->  'whitenoise.middleware.WhiteNoiseMiddleware' to middleware array
